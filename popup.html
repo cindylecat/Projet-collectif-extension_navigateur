@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Do-Buy List</title>
+    <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+    <script src="popup.js"></script>
+    <header>
+        <h1>Do-Buy List</h1>
+        <p>Bienvenue sur Do-Buy List !<br />Enregistre tes potentiels futurs achats et retrouve les quand tu le souhaites...</p>
+    </header>
+    <main>
+        <button class="add" id="addButton">➕</button>
+        <div class="champs" id="champs" style="display:none;">
+            <input class="input" size="25" type="text" required maxlength="100" id="newNameInput" placeholder="Nom de l'article">
+            <input class="input" size="25" type="text" required maxlength="13" id="newPriceInput" placeholder="Prix (€)"><br>
+            <button class="valid" id="validButton">✅</button>
+        </div>
+        
+        <h2>Liste d'achats</h2>
+        
+        <div class="liste">
+            <div id="shoppingList" class="slider-list">
+            </div>
+        </div>
+        
+        <div id="totalDiv" class="total">
+            <p>TOTAL :<br>
+                <span id="Total"></span></p>
+            </div>
+        </main>
+    </body>

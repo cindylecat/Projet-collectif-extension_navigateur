@@ -1,0 +1,182 @@
+@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&family=Space+Grotesk:wght@300..700&display=swap');
+ 
+h1,p{
+    text-align:center
+}
+
+h1 {
+    font-weight: bold;
+    color: whitesmoke;
+}
+
+p{
+    margin-bottom: 15px;
+    color: white;
+    padding-right: 15px;
+    padding-left: 15px;
+    
+}
+
+body {
+    font-family: "Space Grotesk", sans-serif;
+    background-color: rgb(9, 9, 39);
+    width: 350px;
+    height: 575px;
+} 
+
+main {
+    display: flex;
+    flex-flow: column;
+}
+.add {
+    font-size: 3em;
+    text-align: center;
+    margin: auto;
+    margin-bottom: 10px;
+    padding: 4px 13px 4px 13px;
+    background-color: white;
+    color: rgb(9, 9, 39);
+    border-radius: 10px;
+}
+
+.add:hover {
+    background-color: rgb(142, 215, 233);
+    color: white;
+    cursor: pointer;
+}
+
+.champs {
+    text-align: center;
+}
+
+.input {
+    margin-top: 5px;
+    font-size: 1.25em;
+}
+
+.valid {
+    background-color: rgb(9, 9, 39);
+    font-size: 2em;
+    text-align: center;
+    margin: auto;
+    margin-bottom: 5px;
+    padding: auto;
+    border: none;
+    margin-top: 12px;
+} 
+.valid:hover {
+    cursor: pointer;
+}
+
+h2{
+    font-size: 0.9rem;
+    margin-top: 0.6em;
+    margin-bottom: 5px;
+    text-align: center;
+    color: white;
+} 
+
+.liste {
+    margin: auto;
+    border: solid rgb(62, 62, 121);
+    border-radius: 10px;
+    background-color: rgb(62, 62, 121);
+    height: 270px;
+    width: 300px;
+    overflow: hidden;
+    position: relative;
+}
+
+.slider-list {
+    display: flex;
+    flex-direction: column;
+    /* transition: transform 0.3s ease; */      /* N'est plus nécessaire si on n'utilise pas les buttons previous et next */
+    height: 270px;
+    overflow-y: scroll;     /* Affiche une barre défilante verticale */
+    scrollbar-width: none;  /* Rend cette barre invisible */
+}
+
+.bulle {
+    border: solid rgb(72, 180, 207);
+    border-radius: 10px;
+    background-color: rgb(142, 215, 233);
+    /*height: 50px;*/  /* A supprimer depuis la création de la clientHeight dans le Js */
+    width: 290px;
+    margin-right: 3px;
+    margin-left: 3px;
+    margin-top: 7px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    font-weight: bold;
+}
+
+.bulle p{
+    text-align: left;
+}
+
+a {
+    text-decoration: none;
+    color: blue;
+}
+
+a:hover {
+    font-size: 1.1em;
+}
+
+a:visited {
+    text-decoration: none;
+    color: blue;
+}
+
+.deleteButton {
+    padding: auto;
+    background-color: rgb(142, 215, 233);
+    border: none;
+}
+
+.deleteButton:hover {
+    cursor: pointer;
+}
+
+.modifyButton {
+    background-color: rgb(142, 215, 233);
+    border: none;
+}
+
+.modifyButton:hover {
+    cursor: pointer;
+}
+
+.total {
+    border: none;
+    border-radius: 10px;
+    height: 50px;
+    width: 190px;
+    margin-left: 21.5%;
+    text-align: center;
+    background-color: none;
+    position: fixed;
+    bottom: 40px;
+    font-size: 1.2em;
+}
+
+.total p {
+    color: white;
+    font-weight: bold;
+}
+
+/* .previous {
+    position: absolute;
+    top: 0;
+    left: 95%;
+    transform: translateX(-50%);
+}
+
+.next {
+    position: absolute;
+    bottom: 0;
+    left: 95%;
+    transform: translateX(-50%);
+} */

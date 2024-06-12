@@ -1,0 +1,20 @@
+{
+    "manifest_version": 3,
+    "name": "Do-Buy List",
+    "version": "1.0",
+    "description": "Ajouter vos coups de coeur a votre liste d'achat ",
+    "icons": {
+        "16": "images/icon1-16.png",
+        "32": "images/icon1-32.png",
+        "48": "images/icon1-48.png",
+        "128": "images/icon1-128.png"
+        
+    },
+    "action": {
+        "default_popup": "popup.html"
+    },
+    "permissions": [
+        "storage",
+        "tabs"
+    ]
+}
